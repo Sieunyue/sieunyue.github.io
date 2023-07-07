@@ -47,7 +47,7 @@ class Twig implements ITwig {
     this.pos = { x, y }
     this.theta = theta
     this.len = 5
-    this.step = 6
+    this.step = 4
     this.currentStep = 0
     const end = this.getEndPoint()
 
