@@ -1,113 +1,127 @@
 import Image from 'next/image'
+import avatar from '@/assets/avatar.jpeg'
+import javascript from '@/assets/javascript.svg'
+import typescript from '@/assets/typescript.svg'
+import html from '@/assets/html.svg'
+import css from '@/assets/css.svg'
+import sass from '@/assets/sass.svg'
+import tailwindcss from '@/assets/tailwindcss.svg'
+import vue from '@/assets/vue.svg'
+import react from '@/assets/react.svg'
+import webpack from '@/assets/webpack.svg'
+import vite from '@/assets/vite.svg'
+import babel from '@/assets/babel.svg'
+import eslint from '@/assets/eslint.svg'
+import node from '@/assets/node.svg'
+import python from '@/assets/python.svg'
+import docker from '@/assets/docker.svg'
+import mysql from '@/assets/mysql.svg'
+import shell from '@/assets/shell.svg'
+import git from '@/assets/git.svg'
+import java from '@/assets/java.svg'
+import wechat from '@/assets/wechat.svg'
+import next from '@/assets/next.svg'
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">src/app/page.tsx</code>
+    <>
+      <div className="m-auto w-5/12 text-center mt-[8vh]">
+        <Image src={avatar} alt="头像" width={120} height={120} />
+        <h1>Sieunyue</h1>
+      </div>
+      <article className="w-5/12 m-auto text-center">
+        <p>
+          <b>
+            Technology stack
+          </b>
         </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+        <div>
+          <div className="stack-icon" style={{ backgroundColor: '#f5de19' }}>
+            <Image src={javascript} alt="javascript" width={20} height={20} className="align-bottom" />
+            <span className="text-regular">&nbsp;javascript</span>
+          </div>
+          <div className="stack-icon" style={{ backgroundColor: '#3178c6' }}>
+            <Image src={typescript} alt="typescript" width={20} height={20} className="align-bottom" />
+            <span>&nbsp;typescript</span>
+          </div>
+          <div className="stack-icon" style={{ backgroundColor: '#f1662a' }}>
+            <Image src={html} alt="html" width={20} height={20} className="align-bottom" />
+            <span>&nbsp;html</span>
+          </div>
+          <div className="stack-icon" style={{ backgroundColor: '#33a9dc' }}>
+            <Image src={css} alt="css" width={20} height={20} className="align-bottom" />
+            <span>&nbsp;css</span>
+          </div>
+          <div className="stack-icon" style={{ backgroundColor: '#cd6799' }}>
+            <Image src={sass} alt="sass" width={20} height={20} className="align-bottom" />
+            <span>&nbsp;sass</span>
+          </div>
+          <div className="stack-icon" style={{ backgroundColor: '#44a8b3' }}>
+            <Image src={tailwindcss} alt="tailwindcss" width={20} height={20} className="align-bottom" />
+            <span>&nbsp;tailwindcss</span>
+          </div>
+          <div className="stack-icon" style={{ backgroundColor: '#41b883' }}>
+            <Image src={vue} alt="vue" width={20} height={20} className="align-bottom" />
+            <span>&nbsp;vue</span>
+          </div>
+          <div className="stack-icon" style={{ backgroundColor: '#00d8ff' }}>
+            <Image src={react} alt="react" width={20} height={20} className="align-bottom" />
+            <span className="text-regular">&nbsp;react</span>
+          </div>
+          <div className="stack-icon" style={{ backgroundColor: '#6698c4' }}>
+            <Image src={webpack} alt="webpack" width={20} height={20} className="align-bottom" />
+            <span>&nbsp;webpack</span>
+          </div>
+          <div className="stack-icon" style={{ backgroundColor: '#BD34FE' }}>
+            <Image src={vite} alt="vite" width={20} height={20} className="align-bottom" />
+            <span>&nbsp;vite</span>
+          </div>
+          <div className="stack-icon" style={{ backgroundColor: '#f4d44b' }}>
+            <Image src={babel} alt="babel" width={20} height={20} className="align-bottom" />
+            <span className="text-regular">&nbsp;babel</span>
+          </div>
+          <div className="stack-icon" style={{ backgroundColor: '#8080f2' }}>
+            <Image src={eslint} alt="eslint" width={20} height={20} className="align-bottom" />
+            <span>&nbsp;eslint</span>
+          </div>
+          <div className="stack-icon" style={{ backgroundColor: '#019639' }}>
+            <Image src={node} alt="node" width={20} height={20} className="align-bottom" />
+            <span>&nbsp;node</span>
+          </div>
+          <div className="stack-icon" style={{ backgroundColor: '#4775a7' }}>
+            <Image src={python} alt="python" width={20} height={20} className="align-bottom" />
+            <span>&nbsp;python</span>
+          </div>
+          <div className="stack-icon" style={{ backgroundColor: '#4294e0' }}>
+            <Image src={docker} alt="docker" width={20} height={20} className="align-bottom" />
+            <span>&nbsp;docker</span>
+          </div>
+          <div className="stack-icon" style={{ backgroundColor: '#00758f' }}>
+            <Image src={mysql} alt="mysql" width={20} height={20} className="align-bottom" />
+            <span>&nbsp;mysql</span>
+          </div>
+          <div className="stack-icon" style={{ backgroundColor: '#d9b400' }}>
+            <Image src={shell} alt="shell" width={20} height={20} className="align-bottom" />
+            <span>&nbsp;shell</span>
+          </div>
+          <div className="stack-icon" style={{ backgroundColor: '#dd4c35' }}>
+            <Image src={git} alt="git" width={20} height={20} className="align-bottom" />
+            <span>&nbsp;git</span>
+          </div>
+          <div className="stack-icon" style={{ backgroundColor: '#4286de' }}>
+            <Image src={java} alt="java" width={20} height={20} className="align-bottom" />
+            <span>&nbsp;java</span>
+          </div>
+          <div className="stack-icon" style={{ backgroundColor: '#58be6a' }}>
+            <Image src={wechat} alt="wechat" width={20} height={20} className="align-bottom" />
+            <span>&nbsp;wechat</span>
+          </div>
+          <div className="stack-icon" style={{ backgroundColor: '#000000' }}>
+            <Image src={next} alt="next" width={20} height={20} className="align-bottom" />
+            <span>&nbsp;next.js</span>
+          </div>
         </div>
-      </div>
-
-      <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 before:lg:h-[360px]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className="mb-32 grid text-center lg:mb-0 lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Docs{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Learn{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Templates{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Explore the Next.js 13 playground.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Deploy{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
+      </article>
+    </>
   )
 }

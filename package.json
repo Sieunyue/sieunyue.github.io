@@ -13,13 +13,29 @@
     "@types/react": "18.2.14",
     "@types/react-dom": "18.2.6",
     "autoprefixer": "10.4.14",
+    "axios": "^1.4.0",
+    "dayjs": "^1.11.9",
     "eslint": "8.44.0",
     "eslint-config-next": "13.4.8",
+    "fs-extra": "^11.1.1",
+    "gray-matter": "^4.0.3",
+    "mdast-util-from-markdown": "^1.3.1",
+    "nanoid": "^4.0.2",
     "next": "13.4.8",
+    "nprogress": "^0.2.0",
     "postcss": "8.4.24",
     "react": "18.2.0",
     "react-dom": "18.2.0",
+    "react-markdown": "^8.0.7",
+    "react-syntax-highlighter": "^15.5.0",
+    "remark-gfm": "^3.0.1",
+    "sass": "^1.63.6",
     "tailwindcss": "3.3.2",
     "typescript": "5.1.6"
+  },
+  "devDependencies": {
+    "@types/fs-extra": "^11.0.1",
+    "@types/nprogress": "^0.2.0",
+    "@types/react-syntax-highlighter": "^15.5.7"
   }
 }
