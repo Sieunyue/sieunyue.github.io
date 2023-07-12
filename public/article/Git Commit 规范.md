@@ -1,5 +1,5 @@
 --- 
-title: Commit Message 规范格式
+title: Git Commit 规范
 author: Sieunyue
 date: 2022-03-05
 tags: 

@@ -20,7 +20,7 @@ create or replace function_name() returns table $$$$ language plpython3u
 
 ### 变量
 变量在`DECLARE`代码块中定义，需要指定变量类型
-```plsql
+```sql
 CREATE FUNCTION sum(integer, integer)
 RETURNS integer AS $BODY$
 DECLARE
@@ -33,7 +33,7 @@ $BODY$
 LANGUAGE plpgsql;
 ```
 初始化默认值
-```plsql
+```sql
 CREATE FUNCTION sum(integer, integer)
 RETURNS integer AS $BODY$
 DECLARE
@@ -66,7 +66,7 @@ SELECT add_em(1, 2) AS answer;
       3
 ```
 省略参数名称
-```plsql
+```sql
 CREATE FUNCTION sum(integer, integer)
 RETURNS integer AS $BODY$
 BEGIN
@@ -85,7 +85,7 @@ SELECT sum(1, 2) AS answer;
 
 ```
 #### 未知参数数量
-```plsql
+```sql
 CREATE FUNCTION mleast(VARIADIC arr numeric[]) 
 RETURNS numeric AS $BODY$
 BEGIN
@@ -101,7 +101,7 @@ mleast
 (1 row)
 ```
 #### 参数默认值
-```plsql
+```sql
 CREATE FUNCTION foo(a int, b int DEFAULT 2, c int DEFAULT 3)
 RETURNS int
 ```
@@ -143,7 +143,7 @@ $$ LANGUAGE SQL;
 ### 
 ### 条件表达式
 #### IF...ELSE...
-```plsql
+```sql
 IF expression THEN
 	statement_list
 ELSE
@@ -153,7 +153,7 @@ END IF;
 ### 
 ### 循环
 #### LOOP
-```plsql
+```sql
 FOR var IN (SELECT * FROM table) LOOP
 	statement_list
 END LOOP;

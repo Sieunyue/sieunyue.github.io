@@ -70,7 +70,11 @@ a {
   }
 
   &__title {
-    @apply relative text-lg opacity-60 text-regular hover:opacity-90 cursor-pointer transition-opacity duration-100 ease-linear inline-block;
+    @apply relative text-lg opacity-60 text-regular  cursor-pointer transition-opacity duration-100 ease-linear inline-block;
+
+    &:hover{
+      @apply opacity-90
+    }
 
     &::after {
       content: '';
@@ -90,8 +94,8 @@ a {
   }
 }
 
-.markdown{
-  line-height: 30px;
+.markdown {
+  line-height: 1.8;
   font-size: 16px;
   color: theme('textColor.regular');
 
@@ -99,11 +103,16 @@ a {
     color: theme('colors.blue.500');
   }
 
-  p, li {
+  p {
+    margin: 8px 0;
+  }
+
+  p,
+  li {
     color: theme('textColor.secondary');
   }
 
-  code{
+  code:not(pre code) {
     background: #fff5f5;
     color: #ff502c;
     border-radius: 4px;
@@ -111,15 +120,69 @@ a {
     margin: 0 4px;
     font-size: 14px;
   }
+
+  pre code {
+    border-radius: 8px;
+    line-height: 1.6;
+  }
+
+  blockquote {
+    background-color: #f8f8f8;
+    margin: 0;
+    padding: 8px 16px;
+    border-left: 4px;
+    border-left-style: solid;
+    border-left-color: #cbcbcb;
+
+    p {
+      margin: 0;
+      color: lighten($color: #555, $amount: 20);
+      font-size: 14px;
+    }
+  }
+
+  @for $i from 1 through 6 {
+    h#{$i} {
+      margin: 0;
+      margin-top: #{(7 - $i ) * 5px};
+      margin-bottom: 8px;
+      position: relative;
+     
+
+      &[id] {
+        cursor: pointer;
+
+        &:hover::before {
+          opacity: 1;
+          transition: opacity .3s ease-in-out;
+        }
+
+        &::before {
+          content: '#';
+          opacity: 0;
+          position: absolute;
+          left: -1.5ch;
+          top: 0;
+        }
+      }
+    }
+  }
 }
 
-.copyright{
+.copyright {
   width: 30ch;
   display: inline-block;
   overflow: hidden;
   white-space: nowrap;
-
   animation: typing 2s steps(30);
+}
+
+.code-pen {
+  width: 100%;
+  height: 500px;
+  border: 0;
+  border-radius: 4px;
+  overflow: hidden;
 }
 
 @keyframes slide-enter {
@@ -135,5 +198,7 @@ a {
 }
 
 @keyframes typing {
-  from { width: 0 }
+  from {
+    width: 0
+  }
 }

@@ -1,18 +1,14 @@
 import { getPublicDir } from "@/utils/common"
 import fs from 'fs-extra'
-import matter from "gray-matter"
 import path from "path"
 import { PostMeta } from "./types"
 import dayjs from "dayjs"
 import Link from "next/link"
 
 const getPost = async () => {
-  const dirs = path.join(getPublicDir(), '/article')
-  const posts = await fs.readdir(dirs)
+  const metaPath = path.join(getPublicDir(), 'post.meta.json')
 
-  const metaData = await Promise.all(posts.map(async p => await fs.readFile(path.join(dirs, p)).then(d => matter(d).data as PostMeta)))
-
-  metaData.sort((a, b) => b.date.valueOf() - a.date.valueOf())
+  const metaData = JSON.parse((await fs.readFile(metaPath)).toString()) as PostMeta[]
 
   const group: Record<string, PostMeta[]> = {}
 
