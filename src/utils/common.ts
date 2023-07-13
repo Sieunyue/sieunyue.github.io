@@ -1,7 +1,7 @@
 import path from "path"
 
 export const getPublicDir = () => {
-  return path.join(process.cwd(), '/public')
+  return path.join(process.cwd(), '/post')
 }
 
 export const sleep = (delay = 2000) => {

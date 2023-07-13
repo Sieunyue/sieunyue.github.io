@@ -11,6 +11,12 @@ module.exports = {
         primary: '#000',
         regular: '#222',
         secondary: '#555'
+      },
+      backgroundColor: {
+        mdBlockQuote: '#f7f5fe'
+      },
+      borderColor: {
+        mdBlockQuote: '#9e65e3'
       }
     },
   },

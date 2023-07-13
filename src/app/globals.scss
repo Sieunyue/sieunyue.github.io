@@ -127,12 +127,14 @@ a {
   }
 
   blockquote {
-    background-color: #f8f8f8;
+    background-color: theme('backgroundColor.mdBlockQuote');
     margin: 0;
     padding: 8px 16px;
     border-left: 4px;
     border-left-style: solid;
-    border-left-color: #cbcbcb;
+    border-left-color: theme('borderColor.mdBlockQuote');
+    border-radius: 2px;
+    overflow: hidden;
 
     p {
       margin: 0;
