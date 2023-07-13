@@ -1,0 +1,48 @@
+# This workflow will do a clean installation of node dependencies, cache/restore them, build the source code and run tests across different versions of node
+# For more information see: https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-nodejs
+
+name: Node.js CI
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [18.x]
+
+    steps:
+    - uses: actions/checkout@v3
+    - name: Use Node.js ${{ matrix.node-version }}
+      uses: actions/setup-node@v3
+      with:
+        node-version: ${{ matrix.node-version }}
+        cache: 'npm'
+    - run: npm install
+    - run: npm build
+    
+    
+    - name: Tencent Cloud COS Action
+      uses: TencentCloud/cos-action@v1
+      with:
+        # Tencent cloud secret id. Should be referred to a encrypted environment variable
+        secret_id:  ${{ secrets.SECRET_ID }}
+        # Tencent cloud secret key. Should be referred to a encrypted environment variable
+        secret_key: ${{ secrets.SECRET_KEY }}
+        # COS bucket name
+        cos_bucket: sieunyue-page-1256333492
+        # COS bucket region
+        cos_region: ap-hongkong.
+        # Local path to be uploaded to COS. Directory or file is allowed
+        local_path: ./out
+        # COS path to put the local files in on COS
+        remote_path: /
+        # Set to true for cleaning files on COS path which are not existed in local path. Default is false
+        clean: true
