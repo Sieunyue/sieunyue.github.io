@@ -30,7 +30,7 @@ jobs:
     
     
     - name: Tencent Cloud COS Action
-      uses: Lauweal/tencent-cos-action@v1.0.0
+      uses: TencentCloud/cos-action@v1
       with:
         # Tencent cloud secret id. Should be referred to a encrypted environment variable
         secret_id:  ${{ secrets.SECRET_ID }}
@@ -39,7 +39,7 @@ jobs:
         # COS bucket name
         cos_bucket: sieunyue-page-1256333492
         # COS bucket region
-        cos_region: ap-hongkong.
+        cos_region: ap-hongkong
         # Local path to be uploaded to COS. Directory or file is allowed
         local_path: ./out
         # COS path to put the local files in on COS
