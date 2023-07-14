@@ -22,7 +22,6 @@ const getPost = async () => {
     group[year].push(m)
   })
 
-
   const years = Object.keys(group)
 
   years.sort((a, b) => parseInt(b) - parseInt(a))

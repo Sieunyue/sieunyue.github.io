@@ -146,7 +146,7 @@ a {
 
     p {
       margin: 0;
-      color: lighten($color: #555, $amount: 20);
+      color: lighten($color: #555, $amount: 30);
       font-size: 14px;
     }
   }
@@ -178,13 +178,9 @@ a {
   }
 }
 
-.copyright {
-  width: 30ch;
-  display: inline-block;
-  overflow: hidden;
-  white-space: nowrap;
-  animation: typing 2s steps(30);
-}
+// .copyright {
+//  // pass
+// }
 
 .code-pen {
   width: 100%;
@@ -192,6 +188,45 @@ a {
   border: 0;
   border-radius: 4px;
   overflow: hidden;
+}
+
+.typer{
+  --wh: 0;
+  --animation-status: paused;
+  --character: 0;
+  --animation-duration: 0;
+  font-family: Menlo, Monaco, 'Courier New', monospace;
+  line-height: 20px;
+
+  color: lighten($color: #555, $amount: 20);
+
+  &::after{
+    content: '';
+    // display: none;
+    background-color: lighten($color: #555, $amount: 20);
+    height: 20px;
+    width: 2px;
+    border-radius: 2px;
+    margin-left: 4px;
+  }
+
+  &[animation-running]::after{
+    animation: blink 1.5s infinite;
+    display: inline-block;
+  }
+
+  .typer-text{
+    display: inline-block;
+    overflow: hidden;
+    width: var(--wh);
+    white-space: nowrap;
+    animation: typing var(--animation-duration) steps(var(--character)) forwards;
+    animation-play-state: var(--animation-status);
+  }
+
+  &:is(p){
+    margin: 12px 0;
+  }
 }
 
 @keyframes slide-enter {
@@ -207,7 +242,19 @@ a {
 }
 
 @keyframes typing {
-  from {
-    width: 0
+  from { width: 0 }
+}
+
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  100%{
+    opacity: 0;
   }
 }

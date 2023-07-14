@@ -3,7 +3,6 @@ const PostMetaPlugin = require('./lib/meta')
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   output: 'export',
-  basePath: '/page',
   images:{
     unoptimized: true
   },

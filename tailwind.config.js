@@ -7,10 +7,12 @@ module.exports = {
   ],
   theme: {
     extend: {
+
       textColor: {
         primary: '#000',
         regular: '#222',
-        secondary: '#555'
+        secondary: '#555',
+        primary: '#2d65f6'
       },
       backgroundColor: {
         mdBlockQuote: '#f7f5fe'
