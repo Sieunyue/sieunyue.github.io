@@ -43,5 +43,5 @@ jobs:
       run: |
         sudo pip install coscmd
         coscmd config -a ${SECRET_ID} -s ${SECRET_KEY} -b sieunyue-page-1256333492 -r ap-hongkong
-        coscmd upload -rs --delete ./out/ /page -f
+        coscmd upload -rs ./out/ / -f
     
