@@ -35,13 +35,4 @@ jobs:
     
     - name: Build static html
       run: npm run build
-    
-    - name: Upload to tencent cos
-      env:
-        SECRET_ID: ${{ secrets.SECRET_ID }}
-        SECRET_KEY: ${{ secrets.SECRET_KEY }}
-      run: |
-        sudo pip install coscmd
-        coscmd config -a ${SECRET_ID} -s ${SECRET_KEY} -b sieunyue-page-1256333492 -r ap-hongkong
-        coscmd upload -rs ./out/ / -f
-    
+
