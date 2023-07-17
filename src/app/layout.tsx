@@ -1,21 +1,24 @@
 import Link from 'next/link'
-import BackgroundCanvas from './bg'
 import Progress from './porgress'
 import { Suspense } from 'react'
+import fs from 'fs-extra'
 import "highlight.js/styles/atom-one-dark.css"
-import './globals.scss'
+import '@/theme/globals.scss'
 
 export const metadata = {
   title: 'Sieunyue'
 }
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
 }: {
   children: React.ReactNode
 }) {
   return (
     <html lang="en">
+      <head>
+        <script src="/svg_cdn.js" defer/>
+      </head>
       <body>
         <header>
           <nav className="p-8 nav">
@@ -26,7 +29,7 @@ export default function RootLayout({
           </nav>
         </header>
         <main>
-          <BackgroundCanvas />
+          {/* <BackgroundCanvas /> */}
           {children}
         </main>
         <footer className="mt-16 mb-8">

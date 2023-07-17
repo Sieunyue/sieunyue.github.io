@@ -1,0 +1,1 @@
+declare type Icon = 'icon-babel' | 'icon-css' | 'icon-docker' | 'icon-eslint' | 'icon-git' | 'icon-home' | 'icon-html' | 'icon-icon' | 'icon-java' | 'icon-javascript' | 'icon-mysql' | 'icon-next' | 'icon-node' | 'icon-python' | 'icon-react' | 'icon-sass' | 'icon-shell' | 'icon-tailwindcss' | 'icon-typescript' | 'icon-vite' | 'icon-vue' | 'icon-webpack' | 'icon-wechat'
