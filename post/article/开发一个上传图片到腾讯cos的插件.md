@@ -350,7 +350,7 @@ export const uploadToCos = async (filePath: string): Promise<COS.PutObjectResult
 ```
 
 ## 效果
-![Alt text](https://sieunyue-page-1256333492.cos.ap-hongkong.myqcloud.com/assets/d4060677feee408e13557a3134e03e0b_1689237468414.gif)
+![Alt text](https://food-1256333492.cos.ap-guangzhou.myqcloud.com/assets/d4060677feee408e13557a3134e03e0b_1689237468414.gif)
 
 ## 打包 {#打包}
 安装vsce打包工具
