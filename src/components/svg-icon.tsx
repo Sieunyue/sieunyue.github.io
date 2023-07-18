@@ -1,15 +1,16 @@
-import { FC } from "react"
+import { CSSProperties, FC } from "react"
 
 type Props = {
-  name: Icon,
-  size?: number
+  name: Icon
+  className?: string
+  style?: CSSProperties
 }
 
 const SvgIcon: FC<Props> = (props) => {
-  const { size = 60, name } = props
+  const { name, className, style } = props
 
   return (
-    <svg width={size} height={size}>
+    <svg className={className} style={style} >
       <use xlinkHref={`#${name}`} />
     </svg>
   )

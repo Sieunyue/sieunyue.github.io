@@ -3,6 +3,18 @@
 @tailwind utilities;
 @import './theme.scss';
 
+html{
+  font-size: 16px;
+
+  @include useMedia('md'){
+    font-size: 14px;
+  }
+
+  @include useMedia('md'){
+    font-size: 12px;
+  }
+}
+
 body {
   min-height: 100vh;
   width: 100vw;
@@ -193,10 +205,11 @@ a {
 
 .svg-sprite-container{
   position: fixed;
-  left: 0;
-  top: 0;
+  left: -2000px;
+  top: -1000px;
   width: 0;
   height: 0;
+  z-index: -999;
 }
 
 .typer{
@@ -205,7 +218,7 @@ a {
   --character: 0;
   --animation-duration: 0;
   font-family: Menlo, Monaco, 'Courier New', monospace;
-  line-height: 20px;
+  line-height: 1.25rem;
 
   color: lighten($color: #555, $amount: 20);
 
@@ -213,7 +226,7 @@ a {
     content: '';
     // display: none;
     background-color: lighten($color: #555, $amount: 20);
-    height: 20px;
+    height: 1.25rem;
     width: 2px;
     border-radius: 2px;
     margin-left: 4px;
@@ -234,7 +247,28 @@ a {
   }
 
   &:is(p){
-    margin: 12px 0;
+    margin: 0.75rem 0;
+  }
+}
+
+.home__card{
+  width: 1024px;
+  padding-right: 37.5rem;
+  box-sizing: border-box;
+  margin-top: 2rem;
+
+  &-right{
+    width: 25rem;
+    height: 25rem;
+  }
+  
+  @include useMedia('md'){
+    width: 576px;
+    padding-right: 0;
+
+    &-right {
+      display: none;
+    }
   }
 }
 

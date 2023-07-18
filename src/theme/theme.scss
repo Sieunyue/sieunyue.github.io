@@ -7,3 +7,25 @@
   font-family: "Cascadia";
   src: url("https://excalidraw.com/Cascadia.woff2");
 }
+
+$sm: " (max-width: 575px) ";
+$md: " (min-width: 576px) and (max-width: 1023px) ";
+$lg: " (min-width: 1024px) ";
+
+@mixin useMedia($type){
+  @if $type == 'sm' {
+    @media screen and #{$sm} {
+      @content;
+    }
+  }
+  @else if $type == 'md' {
+    @media screen and #{$md} {
+      @content;
+    }
+  }
+  @else{
+    @media screen and #{$lg} {
+      @content;
+    }
+  }
+}
