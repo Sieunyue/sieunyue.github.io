@@ -51,15 +51,15 @@ const Post = async () => {
                   postData.group[g].map((p, i) => (
                     <p key={p.title} className="post-list__item" style={{ '--enter-stage': i } as {}} >
                       <Link href={`/post/${encodeURIComponent(p.title)}`} className="post-list__title">
-                        {p.title}&nbsp;
+                        {p.title}&nbsp;&nbsp;&nbsp;
                         <span className="text-sm text-secondary">
-                          {
-                            p.tags.map(t => (
-                              <span key={t}>{t}&nbsp;</span>
-                            ))
-                          }
-                          ·&nbsp;
-                          {dayjs(p.date).format('MMM D')}
+                          <span>
+                            {
+                              p.tags.join(' · ')
+                            }
+                          </span>
+                          &nbsp;
+                          <span className="text-regular">{dayjs(p.date).format('MMM D')}</span>
                         </span>
                       </Link>
                     </p>
