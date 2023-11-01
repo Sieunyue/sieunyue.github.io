@@ -1,7 +1,7 @@
 --- 
 title: 小程序直传华为云OBS
 author: Sieunyue
-date: 2023-11-1
+date: 2023-11-01
 description:
 tags:
 
