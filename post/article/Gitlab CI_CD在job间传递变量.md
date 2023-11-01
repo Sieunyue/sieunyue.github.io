@@ -2,8 +2,9 @@
 title: Gitlab CI/CD在job间传递变量
 author: Sieunyue
 date: 2023-02-18
+description: Gitlab CI/CD在job间传递变量
 tags: 
-- gitlab
+- Gitlab
 --- 
 
 ```yaml

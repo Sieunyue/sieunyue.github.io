@@ -2,8 +2,9 @@
 title: Git log 常用操作
 author: Sieunyue
 date: 2022-03-05
+description: 介绍Git log 常用操作
 tags: 
-- git
+- Git
 --- 
 
 # Git log 常用操作

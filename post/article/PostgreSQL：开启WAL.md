@@ -2,9 +2,10 @@
 title: PostgreSQL：开启WAL
 author: Sieunyue
 date: 2022-03-14
+description: 在 PostgreSQL 中启用 WAL（Write-Ahead Logging）
 tags: 
-- postgresql
-- sql
+- Postgresql
+- Sql
 --- 
 
 ## 正文

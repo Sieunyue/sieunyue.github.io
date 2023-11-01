@@ -2,8 +2,10 @@
 title: 接入微信支付（JSApi）
 author: Sieunyue
 date: 2023-08-15
+description: JSAPI 支付是指商户通过调用微信支付提供的 JSAPI 接口，在支付场景中调起微信支付模块完成收款，JSAPI支付适用于线下场所、公众号场景和PC网站场景
 tags: 
 - 小程序
+- Tarojs
 --- 
 
 # 接入微信支付（直连商户JSApi）

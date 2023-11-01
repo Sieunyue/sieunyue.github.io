@@ -15,7 +15,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className=" home__card-right absolute right-8 top-12">
+      <div className="home__card-right absolute right-8 top-12">
           <SvgIcon className="w-full h-full" name="icon-home" />
         </div>
     </div>

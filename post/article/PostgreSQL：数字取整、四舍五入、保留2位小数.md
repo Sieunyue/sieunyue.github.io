@@ -2,9 +2,10 @@
 title: PostgreSQL：数字取整、四舍五入、保留2位小数
 author: Sieunyue
 date: 2022-03-14
+description: PostgresSQL中实现数字取整、四舍五入、保留2位小数
 tags: 
-- postgresql
-- sql
+- Postgresql
+- Sql
 --- 
 
 ## 正文

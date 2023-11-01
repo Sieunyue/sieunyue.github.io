@@ -2,9 +2,10 @@
 title: MySQL：安装
 author: Sieunyue
 date: 2022-03-14
+description: Ubuntu安装MySQL
 tags: 
-- mysql
-- sql
+- Mysql
+- Sql
 --- 
 
 # MySQL：安装

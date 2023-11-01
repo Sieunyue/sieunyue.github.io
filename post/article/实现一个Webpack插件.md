@@ -2,10 +2,12 @@
 title: 实现一个Webpack插件
 author: Sieunyue
 date: 2023-07-11
+description: 在Webpack中，Loader和Plugin是两个核心概念，用于在打包时提供对文件的处理和扩展功能。 Plugin监听Webpack的生命周期事件，如初始化、编译、生成资源、输出等，然后在特定的时机执行自定义的逻辑，它们可以访问Webpack的内部数据结构，并进行修改或扩展。
 tags: 
-- webpack
-- node
+- Webpack
+- Node
 --- 
+
 # 实现一个Webpack插件
 
 在Webpack中，Loader和Plugin是两个核心概念，用于在打包时提供对文件的处理和扩展功能。

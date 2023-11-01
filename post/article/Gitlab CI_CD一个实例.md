@@ -2,8 +2,9 @@
 title: Gitlab CI/CD一个实例
 author: Sieunyue
 date: 2023-02-18
+description: Gitlab CI/CD一个实例
 tags: 
-- gitlab
+- Gitlab
 --- 
 
 # gitlab-ci.yml实例

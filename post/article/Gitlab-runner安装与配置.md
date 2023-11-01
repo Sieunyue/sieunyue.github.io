@@ -2,8 +2,9 @@
 title: Gitlab-runner安装与配置
 author: Sieunyue
 date: 2023-02-18
+description: Gitlab-runner安装与配置
 tags: 
-- gitlab
+- Gitlab
 --- 
 
 [参考文档](https://docs.gitlab.com/runner/install/)

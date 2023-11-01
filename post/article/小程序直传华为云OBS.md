@@ -2,13 +2,11 @@
 title: 小程序直传华为云OBS
 author: Sieunyue
 date: 2023-11-01
-description:
+description: 对于带宽是小水管的服务器而言，前端先将文件上传到服务器，然后服务器再文件上传到OSS，一份数据需要在网络上传输两次，会造成网络资源的浪费、增大服务端的资源开销
 tags:
-
-- javascript
-- tarojs
-- miniprogram
-
+- Javascript
+- Tarojs
+- MiniProgram
 ---
 
 # 小程序直传华为云OBS

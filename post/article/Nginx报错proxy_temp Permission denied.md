@@ -2,6 +2,7 @@
 title: Nginx报错proxy_temp Permission denied 
 author: Sieunyue
 date: 2023-07-11
+description: Nginx报错proxy_temp Permission denied
 tags: 
 - Linux
 - Nginx

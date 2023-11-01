@@ -8,23 +8,23 @@
   src: url("https://excalidraw.com/Cascadia.woff2");
 }
 
-$sm: " (max-width: 575px) ";
-$md: " (min-width: 576px) and (max-width: 1023px) ";
-$lg: " (min-width: 1024px) ";
+$phone: " (max-width: 767px) ";
+$table: " (min-width: 768px) and (max-width: 1023px) ";
+$desktop: " (min-width: 1024px) ";
 
 @mixin useMedia($type){
-  @if $type == 'sm' {
-    @media screen and #{$sm} {
+  @if $type == 'phone' {
+    @media screen and #{$phone} {
       @content;
     }
   }
-  @else if $type == 'md' {
-    @media screen and #{$md} {
+  @else if $type == 'table' {
+    @media screen and #{$table} {
       @content;
     }
   }
   @else{
-    @media screen and #{$lg} {
+    @media screen and #{$desktop} {
       @content;
     }
   }

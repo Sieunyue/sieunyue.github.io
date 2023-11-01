@@ -2,9 +2,10 @@
 title: PostgreSQL：JSON操作
 author: Sieunyue
 date: 2022-03-14
+description: PostgreSql支持两种json数据类型：json和jsonb
 tags: 
-- postgresql
-- sql
+- Postgresql
+- Sql
 --- 
 
 ## 正文

@@ -21,7 +21,7 @@ export default async function RootLayout({
       </head>
       <body>
         <header>
-          <nav className="p-8 nav">
+          <nav className="page-width nav py-8 mx-auto">
             <Link href="/">Home</Link>
             <Link href="/post">Post</Link>
             <a>Tags</a>

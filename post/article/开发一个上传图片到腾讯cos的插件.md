@@ -2,8 +2,9 @@
 title: 开发一个上传图片到腾讯cos的插件
 author: Sieunyue
 date: 2023-07-13
+description: 本文将介绍如何基于Visual Studio Code开发一个简单的Markdown上传图片到腾讯cos插件
 tags: 
-- node
+- Node
 --- 
 
 # 开发一个上传图片到腾讯cos的插件

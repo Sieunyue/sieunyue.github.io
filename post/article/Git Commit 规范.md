@@ -2,8 +2,9 @@
 title: Git Commit 规范
 author: Sieunyue
 date: 2022-03-05
+description: Git Commit 规范
 tags: 
-- git
+- Git
 --- 
 
 # Commit Message 规范格式

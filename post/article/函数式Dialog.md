@@ -2,6 +2,7 @@
 title: 函数式Dialog
 author: Sieunyue
 date: 2023-03-14
+description: Dialog对话框组件几乎是每个前端项目必不可少的组件，通常是在保留当前页面状态并屏蔽其他用户输入的情况下，与用户交互并承载相关操作
 tags: 
 - Vue3
 - ElementPlus

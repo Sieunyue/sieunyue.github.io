@@ -2,8 +2,9 @@
 title: Gitlab CI/CD
 author: Sieunyue
 date: 2023-02-18
+description: 介绍Gitlab CI/CD、基本概念、一些例子和注意事项
 tags: 
-- gitlab
+- Gitlab
 --- 
 
 # Gitlab CI/CD

@@ -2,9 +2,10 @@
 title: PostgreSQL：Case条件表达式
 author: Sieunyue
 date: 2022-03-14
+description: PostgreSql中的Case条件表达式
 tags: 
-- postgresql
-- sql
+- Postgresql
+- Sql
 --- 
 
 ```sql

@@ -2,8 +2,9 @@
 title: Gitlab CI/CD缓存(Cache)
 author: Sieunyue
 date: 2023-02-18
+description: Gitlab CI/CD缓存(Cache)
 tags: 
-- gitlab
+- Gitlab
 --- 
 
 # Gitlab CI_CD缓存(Cache)
