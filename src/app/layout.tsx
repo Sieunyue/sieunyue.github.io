@@ -1,7 +1,6 @@
 import Link from 'next/link'
 import Progress from './porgress'
 import { Suspense } from 'react'
-import fs from 'fs-extra'
 import "highlight.js/styles/atom-one-dark.css"
 import '@/theme/globals.scss'
 

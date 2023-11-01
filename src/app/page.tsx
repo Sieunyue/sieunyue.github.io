@@ -1,8 +1,5 @@
-import Image from 'next/image'
-import icon from '@/assets/svg/icon.svg'
 import Info from './info'
 import SvgIcon from '@/components/svg-icon'
-// import h from '@/assets/home.svg'
 
 export default function Home() {
   return (

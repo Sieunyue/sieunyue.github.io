@@ -37,13 +37,13 @@ const Post = async () => {
   
   return (
     <>
-      <article className="page-width m-auto mt-[4vh]">
+      <article className="page-width m-auto">
         <div className="post-list p-0">
           {
             postData.years.map(g => (
               postData.group[g].map((p, i) => (
                 <div key={p.title} className="post-list__item mb-9" style={{ '--enter-stage': i } as {}}>
-                  <Link href={`/post/${encodeURIComponent(p.title)}`}>
+                  <Link href={`/post/${p.title}`}>
                     <span className="text-2xl font-bold">
                       {p.title}
                     </span>
